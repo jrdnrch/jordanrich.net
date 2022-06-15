@@ -1,68 +1,47 @@
-body {
-  background-color: orangered;
-}
 
-.name {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  text-transform: capitalize;
-  font-style: italic;
-  color: aliceblue;
-  text-align: center;
-}
 
-.cover {
+header {
   display: flex;
   justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  min-height: 100vh;
+  align-items: flex-end;
+}
+
+
+.logo {
+  text-transform: capitalize;
   text-align: center;
-  
 }
 
-.brand {
-  font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-}
-
-.contact {
-  background-color: aliceblue;
-}
-
-.bio {
-  min-height: 100vh;
-  background-color: rgb(34, 6, 34);
-  color: aliceblue;
-  font-size: 8em;
-}
-
-#press {
-  min-height: 100vh;
-  background-color: rgb(0, 0, 0);
-  color: aliceblue;
-  padding: 6em;
-
-}
-
-
-
-.logo > img {
+.profile > img {
   width: 120px;
   height: auto;
 }
 
 a {
-  color: aliceblue;
+  color: orangered;
 }
 
-.list  a {
-  color: blue;
-}
 
-nav {
-  display: flex;
-  justify-content: space-between;
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #0E0C01;
+      color: whitesmoke;
+  }
+
+  a {
+      color: #c3d1dada;
+  }
+
+  a.list:visited {
+      color: rgb(213, 209, 209);
+  }
+
+  img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+  }
+
+  img:hover {
+      opacity: 1;
+  }
 }
