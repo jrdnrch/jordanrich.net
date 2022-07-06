@@ -1,21 +1,25 @@
+body {
 
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
 }
 
+header {
+
+}
 
 .logo {
   text-transform: capitalize;
-  text-align: center;
+  color: ;
 }
 
 .profile > img {
   width: 120px;
   height: auto;
 }
+
+ul li {
+  list-style: none;
+}
+
 
 a {
   color: orangered;
