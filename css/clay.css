@@ -7,13 +7,31 @@
   height: auto;
 }
 
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
 ul li {
   list-style: none;
 }
 
+h3  a {
+text-decoration: none;
 
+}
 a {
   color: orangered;
+}
+
+.spread {
+  display: flex;
+  justify-content: space-around;
+
 }
 
 
