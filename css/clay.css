@@ -1,38 +1,51 @@
+html { 
+  font-size: calc(1em + 1vmax);
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: system-ui, sans-serif;
+
+
+
+
+}
+
+
 .logo {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-size: small;
+  
+}
+
+.blurb { 
+  font-size: 4em;
 }
 
 .profile > img {
   width: 120px;
   height: auto;
+  border-radius: 12%;
 }
-
-
-h2 {
-  font-weight: normal;
-}
-
-h3 {
-  font-weight: normal;
-}
-
-ul li {
+.styled {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.styled li {
+  padding-left: 1rem;
+  text-indent: -0.75rem;
+}
+.styled li::before {
+  content: '💿 ';
+}
+.styled li:nth-child(2)::before {
+  content: '📷 ';
+}
+.styled li:nth-child(3)::before {
+  content: '📨 ';
 }
 
-h3  a {
-text-decoration: none;
-
-}
-a {
-  color: orangered;
-}
-
-.spread {
-  display: flex;
-  justify-content: space-around;
-
-}
 
 
 @media (prefers-color-scheme: dark) {
@@ -56,5 +69,12 @@ a {
 
   img:hover {
       opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bio {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
