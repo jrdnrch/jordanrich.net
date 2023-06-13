@@ -34,6 +34,9 @@ section {
   font-size: 4rem;
 }
 
+nav a {
+  padding-right: 1em;
+}
 .menu {
   display: flex;
   justify-content: space-between;
