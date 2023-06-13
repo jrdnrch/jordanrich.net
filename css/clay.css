@@ -1,20 +1,46 @@
-html { 
+/* html { 
   font-size: calc(1em + 1vmax);
-}
+} */
 
 body {
   background-color: #f7f7f7;
-  font-family: system-ui, sans-serif;
-  
+  font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  max-width: 86vw;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
 
-
+section a:visited {
+  color: rgb(169, 43, 247);
 }
 
 
-.logo {
+section {
+  min-height: 100vh;
+  padding-top: 8px;
+}
+
+
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fr-intro {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-title {
   text-transform: uppercase;
-  font-size: small;
   
 }
 
@@ -22,10 +48,9 @@ body {
   font-size: 4em;
 }
 
-.profile > img {
+.site-logo > img {
   width: 120px;
   height: auto;
-  border-radius: 12%;
 }
 
 footer {
@@ -45,6 +70,10 @@ footer {
 
   a.list:visited {
       color: rgb(213, 209, 209);
+  }
+
+  section a:visited {
+    color: rgb(12, 134, 234);
   }
 
   img {

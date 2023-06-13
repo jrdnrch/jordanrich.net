@@ -1,31 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/clay.css">
+<html><head>
         <title>Jordan Rich</title>
-</head>
-<body class="home">
-        <header>
-
-
-                <div class="logo">
-                        <p><em>jordan rich</em></p>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        html {
+            background-color: #ffffff;
+            color: #121212;
+        }
+    
+        * {
+            cursor: default;
+        }
+    
+        a,
+        a:visited {
+            color: blue;
+        }
+    
+        a:hover {
+            color: darkblue;
+        }
+    
+        #container {
+            font-family: "Myriad Pro", "Helvetica Neue", Helvetica;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: .8rem;
+            margin: 5%;
+        }
+    
+        #main {
+            display: flex;
+            flex-direction: column;
+            grid-gap: 1.3rem;
+            margin-bottom: 1.2rem;
+            max-width: 60ch;
+            line-height: 1.2rem;
+        }
+    
+        #description {
+            display: flex;
+            flex-direction: column;
+            row-gap: .9rem;
+        }
+    
+        #pfp {
+            width: 64px;
+            height: 64px;
+            display: block;
+        }
+    
+        #pfp>img {
+            width: 100%;
+        }
+    
+        #links {
+            margin-top: 1.4rem;
+        }
+    
+        #links>*:not(:last-child) {
+            padding-right: .167rem;
+        }
+    
+        #redacted {
+            background-color: blue;
+            color: blue;
+            user-select: none;
+        }
+    
+        .fade-1 {
+            animation-duration: 0.4s;
+        }
+    
+        .fade-2 {
+            animation-duration: 0.7s;
+        }
+    
+        .fade-3 {
+            animation-duration: 0.9s;
+        }
+    
+        .fade-4 {
+            animation-duration: 1.0s;
+        }
+    
+        .fade-from-bottom {
+            animation-name: fade-from-bottom;
+            animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+        }
+    
+        @keyframes fade-from-bottom {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+    
+            to {
+                opacity: 1
+            }
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div id="container">
+            <div>
+                <div id="main">
+                    <div class="fade-from-bottom fade-1">
+                        <a href="/" id="pfp"><img src="/images/me.webp"></a>
+                    </div>
+                    <div>
+                        <div id="description">
+                            <div class="fade-from-bottom fade-2">I currently live in Montréal, Quebec and work on <span id="redacted">redacted</span>. We're <a href="mailto:zain@zainamro.com">hiring</a> talented engineers &amp; designers in San Francisco, CA.</div>
+                            <div class="fade-from-bottom fade-3">Previously, I grew up in California and studied at UC Berkeley.</div>
+                            <div class="fade-from-bottom fade-4">You can reach me via <a href="mailto:jordan@jordanrich.net">email</a>, <a href="https://twitter.com/zainamro">twitter</a>, or <a href="https://www.linkedin.com/in/zainamro/">linkedin</a>.</div>
+                        </div>
+                    </div>
                 </div>
-                                <div class="profile">
-                        <img src="/images/me.webp" alt="">
-                </div>
-        </header>
-
-
-                
-<main>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda magnam eius dicta reiciendis, voluptas cum laborum culpa blanditiis dolorem qui? Atque facilis laboriosam, error iusto nulla cupiditate est in tempora?</p>
-</main>
-
-
-        
-</body>
-</html>
+            </div>
+        </div>
+    
+    
+    </body></html>
