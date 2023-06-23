@@ -1,0 +1,32 @@
+p {
+    font-size: 3em;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #0E0C01;
+      color: whitesmoke;
+  }
+
+  a {
+      color: #c3d1dada;
+  }
+
+  a.list:visited {
+      color: rgb(213, 209, 209);
+  }
+
+  section a:visited {
+    color: rgb(12, 134, 234);
+  }
+
+  img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+  }
+
+  img:hover {
+      opacity: 1;
+  }
+}
+
