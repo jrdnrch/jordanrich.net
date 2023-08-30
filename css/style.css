@@ -1,9 +1,35 @@
-
-
-
-p {
-    font-size: 3em;
+body {
+    font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+    background-color:#FDF6E3;
 }
+
+.logo {
+    display: flex;
+    gap: 1em;
+}
+
+
+h2 {
+    font-size: small;
+}
+
+.simple-list > li {
+    list-style-type: none;
+}
+
+.syndicated {
+    display: flex;
+    gap: 1em;
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+
+}
+
+.post-meta {
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+
 
 @media (prefers-color-scheme: dark) {
   body {
@@ -20,7 +46,7 @@ p {
   }
 
   section a:visited {
-    color: rgb(12, 134, 234);
+    color: rgb(112, 191, 255);
   }
 
   img {
