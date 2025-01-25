@@ -3,11 +3,11 @@ body {
     background-color:#f9f7f2;
 }
 
-.logo {
-    display: flex;
-    gap: 1em;
+#site-title {
+    font-size: small;
+    font-weight: normal;
+    font-style: italic;
 }
-
 
 h2 {
     font-size: small;
@@ -17,18 +17,8 @@ h2 {
     list-style-type: none;
 }
 
-.syndicated {
-    display: flex;
-    gap: 1em;
-    font-family: 'Nimbus Mono PS', 'Courier New', monospace;
 
-}
 
-.post-meta {
-    font-size: x-small;
-    font-style: italic;
-    font-weight: bold;
-}
 
 
 @media (prefers-color-scheme: dark) {
