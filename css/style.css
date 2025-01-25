@@ -1,6 +1,6 @@
 body {
     font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
-    background-color: #f9f7f2;
+    background-color: #FFE2C7;
     padding: 20px;
     margin: 0;
 }
@@ -8,6 +8,7 @@ body {
 #site-title {
     font-weight: normal;
     font-style: italic;
+    font-size: 24px;
 }
 
 h2 {
@@ -26,6 +27,10 @@ h2 {
 li {
     padding: 12px;
     margin-bottom: 8px;
+  }
+
+  a {
+    color: blue;
   }
 
 
